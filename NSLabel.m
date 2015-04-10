@@ -211,15 +211,15 @@
 #pragma mark setters which invalidate the view
 
 - (void)setText:(NSString*)text {
-	_text = text;
+	_text = [text copy];
 	_attributedText = nil;
 	[self invalidateIntrinsicContentSize];
 	[self setNeedsDisplay:YES];
 }
 
 - (void)setAttributedText:(NSAttributedString*)attributedText {
-	_attributedText = attributedText;
 	_text = nil;
+	_attributedText = [attributedText copy];
 	[self invalidateIntrinsicContentSize];
 	[self setNeedsDisplay:YES];
 }
