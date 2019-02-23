@@ -177,7 +177,7 @@
 - (NSStringDrawingOptions)drawingOptions {
 	NSStringDrawingOptions options = NSStringDrawingUsesFontLeading;
 
-	if (self.numberOfLines == 0) {
+	if (self.numberOfLines != 1) {
 		options |= NSStringDrawingUsesLineFragmentOrigin;
 	}
 
