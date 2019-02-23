@@ -10,7 +10,7 @@ ObjC 2.0 and Automatic Reference Counting (ARC) are mandatory.
 This project has only been tested with Xcode 6. It's unknown if this works with older versions.
 
 #### Dependencies
-There are no dependencies other than the Cocoa framework.
+There are no dependencies other than the AppKit framework.
 
 #### Usage
 Simply include NSLabel.h/.m in your project and use it like the [UILabel Class](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UILabel_Class/).
