@@ -65,8 +65,8 @@
 		self.textColor       = [coder decodeObjectForKey:@"textColor"];
 		self.backgroundColor = [coder decodeObjectForKey:@"backgroundColor"];
 		self.numberOfLines   = [coder containsValueForKey:@"numberOfLines"] ? [[coder decodeObjectForKey:@"numberOfLines"] integerValue]         : 1;
-		self.textAlignment   = [coder containsValueForKey:@"numberOfLines"] ? [[coder decodeObjectForKey:@"textAlignment"] unsignedIntegerValue] : NSLeftTextAlignment;
-		self.lineBreakMode   = [coder containsValueForKey:@"numberOfLines"] ? [[coder decodeObjectForKey:@"lineBreakMode"] unsignedIntegerValue] : NSLineBreakByTruncatingTail;
+		self.textAlignment   = [coder containsValueForKey:@"textAlignment"] ? [[coder decodeObjectForKey:@"textAlignment"] unsignedIntegerValue] : NSLeftTextAlignment;
+		self.lineBreakMode   = [coder containsValueForKey:@"lineBreakMode"] ? [[coder decodeObjectForKey:@"lineBreakMode"] unsignedIntegerValue] : NSLineBreakByTruncatingTail;
 
 #if CGFLOAT_IS_DOUBLE
 		self.preferredMaxLayoutWidth = [[coder decodeObjectForKey:@"preferredMaxLayoutWidth"] doubleValue];
