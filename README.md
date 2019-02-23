@@ -10,17 +10,21 @@ It's biggest advantage compared to [NSTextField][2] is a more lightweight memory
 [4]: https://developer.apple.com/documentation/appkit/nsview/1526949-baselineoffsetfrombottom?language=objc
 
 #### Requirements
-ObjC 2.0 and Automatic Reference Counting (ARC) are mandatory.
 
-This project has only been tested with Xcode 6. It's unknown if this works with older versions.
+* macOS 10.7 or newer
+* Xcode 6 or newer
 
 #### Dependencies
+
 There are no dependencies other than the AppKit framework.
 
 #### Usage
+
 Simply include NSLabel.h/.m in your project and use it like the [UILabel][1] class.
 **BUT** remember that not all features are supported.
 See the Header file for more information about which properties currently are.
 
 #### License
-This project is licensed under the MIT license. See the LICENSE file for more information.
+
+This project is licensed under the MIT license.
+See the LICENSE file for more information.
