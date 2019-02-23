@@ -43,7 +43,7 @@
 		self.textColor       = self.defaultTextColor;
 		self.backgroundColor = self.defaultBackgroundColor;
 		self.numberOfLines   = 1;
-		self.textAlignment   = NSLeftTextAlignment;
+		self.textAlignment   = NSTextAlignmentLeft;
 		self.lineBreakMode   = NSLineBreakByTruncatingTail;
 	}
 
@@ -65,7 +65,7 @@
 		self.textColor       = [coder decodeObjectForKey:@"textColor"];
 		self.backgroundColor = [coder decodeObjectForKey:@"backgroundColor"];
 		self.numberOfLines   = [coder containsValueForKey:@"numberOfLines"] ? [[coder decodeObjectForKey:@"numberOfLines"] integerValue]         : 1;
-		self.textAlignment   = [coder containsValueForKey:@"textAlignment"] ? [[coder decodeObjectForKey:@"textAlignment"] unsignedIntegerValue] : NSLeftTextAlignment;
+		self.textAlignment   = [coder containsValueForKey:@"textAlignment"] ? [[coder decodeObjectForKey:@"textAlignment"] unsignedIntegerValue] : NSTextAlignmentLeft;
 		self.lineBreakMode   = [coder containsValueForKey:@"lineBreakMode"] ? [[coder decodeObjectForKey:@"lineBreakMode"] unsignedIntegerValue] : NSLineBreakByTruncatingTail;
 
 #if CGFLOAT_IS_DOUBLE
