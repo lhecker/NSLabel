@@ -240,6 +240,12 @@
 	[self setNeedsDisplay:YES];
 }
 
+- (void)setNumberOfLines:(NSInteger)numberOfLines {
+	_numberOfLines = numberOfLines;
+	[self invalidateIntrinsicContentSize];
+	[self setNeedsDisplay:YES];
+}
+
 - (void)setTextAlignment:(NSTextAlignment)textAlignment {
 	_textAlignment = textAlignment;
 	[self invalidateIntrinsicContentSize];
@@ -251,6 +257,12 @@
 	[self invalidateIntrinsicContentSize];
 	[self setNeedsDisplay:YES];
 
+}
+
+- (void)setPreferredMaxLayoutWidth:(CGFloat)preferredMaxLayoutWidth {
+	_preferredMaxLayoutWidth = preferredMaxLayoutWidth;
+	[self invalidateIntrinsicContentSize];
+	[self setNeedsDisplay:YES];
 }
 
 @end
