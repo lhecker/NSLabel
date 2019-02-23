@@ -187,11 +187,7 @@
 - (NSParagraphStyle*)drawingParagraphStyle {
 	NSMutableParagraphStyle* ps = [NSMutableParagraphStyle new];
 	ps.alignment = self.textAlignment;
-
-	if (self.numberOfLines != 0) {
-		ps.lineBreakMode = self.lineBreakMode;
-	}
-
+	ps.lineBreakMode = self.lineBreakMode;
 	return ps;
 }
 
