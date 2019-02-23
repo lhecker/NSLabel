@@ -188,7 +188,7 @@
 	NSMutableParagraphStyle* ps = [NSMutableParagraphStyle new];
 	ps.alignment = self.textAlignment;
 
-	if (self.numberOfLines) {
+	if (self.numberOfLines != 0) {
 		ps.lineBreakMode = self.lineBreakMode;
 	}
 
@@ -256,7 +256,6 @@
 	_lineBreakMode = lineBreakMode;
 	[self invalidateIntrinsicContentSize];
 	[self setNeedsDisplay:YES];
-
 }
 
 - (void)setPreferredMaxLayoutWidth:(CGFloat)preferredMaxLayoutWidth {
